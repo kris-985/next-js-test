@@ -18,7 +18,12 @@ const mainSectionProps = {
   },
   title: "Managed agency selection",
   description: "Stenghten your onboarding process",
-  margin: 20
+  margin: 20,
+  card: {
+    firstCardProps: { width: 450 },
+    secondCardProps: { width: 500 },
+    thirdCardProps: { width: 550, color: '#1e90ff', textDecoration: 'underline' },
+  }
 };
 
 export default function Home() {

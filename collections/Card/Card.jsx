@@ -10,14 +10,12 @@ import {
   Title,
 } from "./elements";
 
-const firstCard = { width: 450 };
-const secondCard = { width: 500 };
-const thirdCard = { width: 550, color: '#1e90ff', textDecoration: 'underline' };
+export const Card = ({ card }) => {
+  const { firstCardProps, secondCardProps, thirdCardProps } = card;
 
-export const Card = () => {
   return (
     <Container>
-      <CardContainer {...firstCard}>
+      <CardContainer {...firstCardProps}>
         <IconContainer>
           <TfiBriefcase />
         </IconContainer>
@@ -29,7 +27,7 @@ export const Card = () => {
           </Description>
         </Content>
       </CardContainer>
-      <CardContainer {...secondCard}>
+      <CardContainer {...secondCardProps}>
         <IconContainer>
           <TbDeviceIpadHorizontalSearch />
         </IconContainer>
@@ -41,12 +39,12 @@ export const Card = () => {
           </Description>
         </Content>
       </CardContainer>
-      <CardContainer {...thirdCard}>
+      <CardContainer {...thirdCardProps}>
         <IconContainer>
           <FcConferenceCall />
         </IconContainer>
         <Content>
-          <Title {...thirdCard}>Pitch</Title>
+          <Title {...thirdCardProps}>Pitch</Title>
           <Description>
             Comprehensive <strong>pitch management</strong>, including comms,
             diary management and pitch hosting.

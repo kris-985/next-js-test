@@ -36,7 +36,7 @@ export const Content = styled.div`
   flex-direction: column;
 `;
 
-export const Title = styled(({ color,textDecoration, ...props }) => (
+export const Title = styled(({ color, textDecoration, ...props }) => (
     <strong {...props} />
   ))`
   font-size: 1.2em;

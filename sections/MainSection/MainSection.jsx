@@ -25,7 +25,7 @@ export const MainSection = ({ image, title, description, ...props }) => {
             height={image.height}
           />
         </StyledImageContainer>
-        <Card />
+        <Card {...props}/>
       </StyledCardContainer>
     </StyledContainer>
   );
