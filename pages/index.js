@@ -1,10 +1,24 @@
-import { Hero } from "../sections";
+/* eslint-disable @next/next/no-page-custom-font */
+import { Hero, MainSection } from "../sections";
 
 const heroProps = {
   image: { src: "/img/heroimg.png", alt: "", width: 1000, height: 1680 },
   title: "Agency procurement, outsourced.",
   description: "Start the process here",
   ctaText: "Start",
+};
+
+const mainSectionProps = {
+  background: { src: "/img/mainsection/mainsectionbgr.png", alt: "" },
+  image: {
+    src: "/img/mainsection/mainsectionposter.png",
+    alt: "",
+    width: 400,
+    height: 600,
+  },
+  title: "Managed agency selection",
+  description: "Stenghten your onboarding process",
+  margin: 20
 };
 
 export default function Home() {
@@ -20,7 +34,7 @@ export default function Home() {
       </head>
       <div>
         <Hero {...heroProps} />
-        {/** Other sections */}
+        <MainSection {...mainSectionProps} />
       </div>
     </>
   );
